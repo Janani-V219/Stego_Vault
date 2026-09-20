@@ -8,7 +8,8 @@
 
 > A full-stack, military-grade steganography and cryptographic laboratory built with **Java 21**, **Spring Boot 3.4**, **Spring Security**, **Spring Data JPA**, **MySQL / H2**, and a responsive cybersecurity-themed single-page frontend.
 
-🌐 **Live Demo**: [https://beamish-cuchufli-3ad51f.netlify.app](https://beamish-cuchufli-3ad51f.netlify.app) *(Password: `My-Drop-Site`)*  
+🌐 **Live Web App (GitHub Pages)**: [https://janani-v219.github.io/Stego_Vault/](https://janani-v219.github.io/Stego_Vault/)  
+⚡ **Alternative Netlify Mirror**: [https://beamish-cuchufli-3ad51f.netlify.app](https://beamish-cuchufli-3ad51f.netlify.app) *(Password: `My-Drop-Site`)*  
 📦 **GitHub Repository**: [https://github.com/Janani-V219/Stego_Vault](https://github.com/Janani-V219/Stego_Vault)
 
 ---

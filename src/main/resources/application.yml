@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+
+spring:
+  application:
+    name: secret-encoder
+  profiles:
+    active: dev
+  sql:
+    init:
+      mode: never
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 25MB
+
+---
+# Development Profile (H2 In-Memory with MySQL compatibility)
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: jdbc:h2:mem:stegovault;MODE=MySQL;DATABASE_TO_LOWER=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:StegoVaultSuperSecretKeyForJwtTokenGenerationMustBe256BitsMinimumToComplyWithHMACSHA256Requirements!}
+    expiration-ms: 86400000 # 24 hours

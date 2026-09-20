@@ -4,7 +4,6 @@
 [![Spring Boot 3.4](https://img.shields.io/badge/Spring%20Boot-3.4.3-brightgreen.svg)](https://spring.io/projects/spring-boot)
 [![Security](https://img.shields.io/badge/Cryptography-AES--256--GCM-blue.svg)](https://en.wikipedia.org/wiki/Galois/Counter_Mode)
 [![Steganography](https://img.shields.io/badge/Steganography-LSB%20%2B%20Zero--Width-purple.svg)]()
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
 
 > A full-stack, military-grade steganography and cryptographic laboratory built with **Java 21**, **Spring Boot 3.4**, **Spring Security**, **Spring Data JPA**, **MySQL / H2**, and a responsive cybersecurity-themed single-page frontend.
 
